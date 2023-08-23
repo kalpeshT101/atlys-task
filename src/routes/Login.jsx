@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
-import { Logo } from "../assets/Logo";
+import { Logo } from "../assets/svg/Logo";
 
 export default function Login() {
   const location = useLocation();
