@@ -32,3 +32,5 @@ Start the server
 2. React-Router
 3. Tailwind
 4. Vite(Frontend Tooling)
+
+scaffold created from: [https://github.com/moinulmoin/vite-react-tailwind-starter](https://github.com/moinulmoin/vite-react-tailwind-starter)
