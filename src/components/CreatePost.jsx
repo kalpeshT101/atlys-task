@@ -7,7 +7,7 @@ export const CreatePost = () => {
   return (
     <>
       <div className="bg-blackBg w-2/3 rounded border-2 border-blackBorder ">
-        <Link to="modal" state={{ background: location }}>
+        <Link to="onboarding" state={{ background: location }}>
           <h1
             for="message"
             class="block mb-2 text-lg font-medium text-gray p-4 text-left"

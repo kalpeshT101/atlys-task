@@ -1,5 +1,5 @@
-import user1 from "../assets/user1.png";
-import user2 from "../assets/user2.png";
+import user1 from "../assets/images/user1.png";
+import user2 from "../assets/images/user2.png";
 
 export const IMAGES = {
   user1,

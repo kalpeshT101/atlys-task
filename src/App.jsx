@@ -15,7 +15,7 @@ function App() {
       </Routes>
       {background && (
         <Routes>
-          <Route path="/home/modal" element={<OnboardingModal />} />
+          <Route path="/home/onboarding" element={<OnboardingModal />} />
         </Routes>
       )}
     </div>
