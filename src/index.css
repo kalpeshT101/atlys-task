@@ -12,11 +12,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .gradient {
   position: relative;
   z-index: 9999;
+
+  animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .gradient::before {

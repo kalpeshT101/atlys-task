@@ -18,8 +18,8 @@ export default function OnboardingModal() {
   function renderView() {
     if (loginView) {
       return (
-        <div className="modalDiv fixed top-0 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div className="bg-[#27292D] w-1/3 rounded-lg gradient">
+        <div className="modalDiv fixed top-0 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-all transform ease-out duration-500">
+          <div className="bg-blackBg w-1/3 rounded-lg gradient">
             <button
               style={{ "border-radius": "50%", width: 30, height: 30 }}
               className=" bg-[#131319] p-[10px] m-3  float-right"
@@ -31,7 +31,7 @@ export default function OnboardingModal() {
               <Cross />
             </button>
             <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col justify-center items-center">
-              <h2 className="mt-10 text-center text-sm  font-bold leading-9 tracking-tight text-[#6B6C70]">
+              <h2 className="mt-10 text-center text-sm  font-bold leading-9 tracking-tight text-grayShade">
                 SIGN UP
               </h2>
               <h2 className=" text-center text-lg font-bold  tracking-tight text-white">
@@ -55,7 +55,7 @@ export default function OnboardingModal() {
                       type="email"
                       placeholder="Enter your email"
                       autoComplete="email"
-                      className="bg-[#27292D]  block w-full rounded-md border-0 placeholder-[#7F8084]  p-2 shadow-sm ring-1 ring-inset ring-[#35373B] placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
+                      className="bg-blackBg  block w-full rounded-md border-0 placeholder-lightGray  p-2 shadow-sm ring-1 ring-inset ring-blackBorder placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -74,7 +74,7 @@ export default function OnboardingModal() {
                       type="email"
                       placeholder="Choose a preferred username"
                       autoComplete="email"
-                      className="bg-[#27292D]  block w-full rounded-md border-0 placeholder-[#7F8084]  p-2 shadow-sm ring-1 ring-inset ring-[#35373B] placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
+                      className="bg-blackBg  block w-full rounded-md border-0 placeholder-lightGray  p-2 shadow-sm ring-1 ring-inset ring-blackBorder placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -96,14 +96,14 @@ export default function OnboardingModal() {
                       </a>
                     </div>
                   </div>
-                  <div className="mt-2 flex bg-[#27292D] items-center border border-[#35373B]">
+                  <div className="mt-2 flex bg-blackBg items-center border border-blackBorder">
                     <input
                       id="password"
                       name="password"
                       type="password"
                       autoComplete="current-password"
                       placeholder="Enter your password"
-                      className="bg-[#27292D]  block w-full rounded-md border-0 placeholder-[#7F8084]  p-2 shadow-sm  placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
+                      className="bg-blackBg  block w-full rounded-md border-0 placeholder-lightGray  p-2 shadow-sm  placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
                     />
                     <div className="mr-2">
                       <Eye />
@@ -123,7 +123,7 @@ export default function OnboardingModal() {
                 </div>
               </form>
 
-              <p className="mt-2 text-left text-sm text-[#7F8084]">
+              <p className="mt-2 text-left text-sm text-lightGray">
                 Already have an account
                 <button
                   className="ml-1 font-semibold leading-6 text-[#C5C7CA] hover:text-indigo-500"
@@ -140,7 +140,7 @@ export default function OnboardingModal() {
     } else {
       return (
         <div className="modalDiv fixed top-0 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div className="bg-[#27292D] w-1/3 rounded-lg gradient">
+          <div className="bg-blackBg w-1/3 rounded-lg gradient">
             <button
               style={{ "border-radius": "50%", width: 30, height: 30 }}
               className=" bg-[#131319] p-[10px] m-3  float-right"
@@ -152,7 +152,7 @@ export default function OnboardingModal() {
               <Cross />
             </button>
             <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col justify-center items-center">
-              <h2 className="mt-10 text-center text-sm  font-bold leading-9 tracking-tight text-[#6B6C70]">
+              <h2 className="mt-10 text-center text-sm  font-bold leading-9 tracking-tight text-grayShade">
                 Welcome Back
               </h2>
               <h2 className=" text-center text-lg font-bold  tracking-tight text-white">
@@ -176,7 +176,7 @@ export default function OnboardingModal() {
                       type="email"
                       placeholder="Enter your email or username"
                       autoComplete="email"
-                      className="bg-[#27292D]  block w-full rounded-md border-0 placeholder-[#7F8084]  p-2 shadow-sm ring-1 ring-inset ring-[#35373B] placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
+                      className="bg-blackBg  block w-full rounded-md border-0 placeholder-lightGray  p-2 shadow-sm ring-1 ring-inset ring-blackBorder placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -198,14 +198,14 @@ export default function OnboardingModal() {
                       </a>
                     </div>
                   </div>
-                  <div className="mt-2 flex bg-[#27292D] items-center border border-[#35373B]">
+                  <div className="mt-2 flex bg-blackBg items-center border border-blackBorder">
                     <input
                       id="password"
                       name="password"
                       type="password"
                       autoComplete="current-password"
                       placeholder="Enter your password"
-                      className="bg-[#27292D]  block w-full rounded-md border-0 placeholder-[#7F8084]  p-2 shadow-sm  placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
+                      className="bg-blackBg  block w-full rounded-md border-0 placeholder-lightGray  p-2 shadow-sm  placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
                     />
                     <div className="mr-2">
                       <Eye />
@@ -225,7 +225,7 @@ export default function OnboardingModal() {
                 </div>
               </form>
 
-              <p className="mt-2 text-left text-sm text-[#7F8084]">
+              <p className="mt-2 text-left text-sm text-lightGray">
                 Already have an account
                 <button
                   className="ml-1 font-semibold leading-6 text-[#C5C7CA] hover:text-indigo-500"
