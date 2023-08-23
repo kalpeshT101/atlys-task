@@ -70,7 +70,7 @@ export default function OnboardingModal() {
                   </label>
                   <div className="mt-2">
                     <input
-                      id="email"
+                      id="username"
                       name="email"
                       type="email"
                       placeholder="Choose a preferred username"
@@ -165,7 +165,7 @@ export default function OnboardingModal() {
                   </label>
                   <div className="mt-2">
                     <input
-                      id="email"
+                      id="emailorusername"
                       name="email"
                       type="email"
                       placeholder="Enter your email or username"
