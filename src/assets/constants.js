@@ -15,6 +15,7 @@ export const userPosts = [
     emojiReaction: "👋",
     postedTime: "5mins ago",
     isEdited: "false",
+    commentCount: 24,
   },
   {
     imageSrc: IMAGES.user2,
@@ -24,5 +25,6 @@ export const userPosts = [
     emojiReaction: "😞",
     postedTime: "8mins ago",
     isEdited: "true",
+    commentCount: 12,
   },
 ];

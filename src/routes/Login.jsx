@@ -36,7 +36,7 @@ export default function Login() {
                     type="email"
                     placeholder="Enter your email or username"
                     autoComplete="email"
-                    className="bg-blackBg  block w-full rounded-md border-0 placeholder-lightGray  p-2 shadow-sm ring-1 ring-inset ring-blackBorder placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
+                    className="bg-blackBg text-white block w-full rounded-md border-0 placeholder-lightGray  p-2 shadow-sm ring-1 ring-inset ring-blackBorder placeholder:text-gray-400 focus:outline-0  sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function Login() {
                     type="password"
                     autoComplete="current-password"
                     placeholder="Enter your password"
-                    className="bg-blackBg  block w-full rounded-md border-0 placeholder-lightGray  p-2 shadow-sm ring-1 ring-inset ring-blackBorder placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6"
+                    className="bg-blackBg text-white block w-full rounded-md border-0 placeholder-lightGray  p-2 shadow-sm ring-1 ring-inset ring-blackBorder placeholder:text-gray-400 focus:outline-0 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
