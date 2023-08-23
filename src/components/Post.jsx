@@ -15,7 +15,7 @@ export const Post = ({
 
   return (
     <>
-      <div className="bg-blackBg w-2/3 rounded border-2 border-blackBorder my-6">
+      <div className="bg-blackBg w-[60%] rounded border-2 border-blackBorder my-6">
         <Link to="onboarding" state={{ background: location }}>
           <div className="flex flex-1 m-5 items-center justify-between">
             <div className="flex">

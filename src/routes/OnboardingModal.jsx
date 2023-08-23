@@ -4,11 +4,6 @@ import { Cross } from "../assets/svg/Cross";
 import { Eye } from "../assets/svg/Eye";
 
 export default function OnboardingModal() {
-  // to disable scroll when modal is open
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-  }, []);
-
   const [loginView, setLoginView] = useState(true);
 
   useEffect(() => {
