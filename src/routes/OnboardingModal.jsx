@@ -21,16 +21,17 @@ export default function OnboardingModal() {
         <div className="modalDiv fixed top-0 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-all transform ease-out duration-500">
           <div className="bg-blackBg w-1/3 rounded-lg gradient">
             <button
-              style={{ borderRadius: "50%", width: 30, height: 30 }}
-              className=" bg-[#131319] p-[10px] m-3  float-right"
+              className=" bg-[#131319] rounded-full w-7 h-7 absolute right-4 top-4"
               onClick={() => {
                 navigate("/home");
                 document.body.style.overflow = "auto";
               }}
             >
-              <Cross />
+              <div className="mx-auto w-2.5 h-2.5">
+                <Cross />
+              </div>
             </button>
-            <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center">
               <h2 className="mt-10 text-center text-sm  font-bold leading-9 tracking-tight text-grayShade">
                 SIGN UP
               </h2>
@@ -44,7 +45,7 @@ export default function OnboardingModal() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm text-left font-medium leading-6 text-[#C5C7CA]"
+                    className="block text-sm text-left font-medium leading-6 text-gray"
                   >
                     Email
                   </label>
@@ -63,7 +64,7 @@ export default function OnboardingModal() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm text-left font-medium leading-6 text-[#C5C7CA]"
+                    className="block text-sm text-left font-medium leading-6 text-gray"
                   >
                     Username
                   </label>
@@ -83,18 +84,10 @@ export default function OnboardingModal() {
                   <div className="flex items-center justify-between">
                     <label
                       htmlFor="password"
-                      className="block text-sm font-medium leading-6 text-[#C5C7CA]"
+                      className="block text-sm font-medium leading-6 text-gray"
                     >
                       Password
                     </label>
-                    <div className="text-sm">
-                      <a
-                        href="#"
-                        className="font-semibold text-[#C5C7CA] hover:text-indigo-500"
-                      >
-                        Forgot password?
-                      </a>
-                    </div>
                   </div>
                   <div className="mt-2 flex bg-blackBg items-center border border-blackBorder">
                     <input
@@ -126,7 +119,7 @@ export default function OnboardingModal() {
               <p className="mt-2 text-left text-sm text-lightGray">
                 Already have an account
                 <button
-                  className="ml-1 font-semibold leading-6 text-[#C5C7CA] hover:text-indigo-500"
+                  className="ml-1 font-semibold leading-6 text-gray hover:text-indigo-500"
                   onClick={() => setLoginView(!loginView)}
                 >
                   {" "}
@@ -142,14 +135,15 @@ export default function OnboardingModal() {
         <div className="modalDiv fixed top-0 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
           <div className="bg-blackBg w-1/3 rounded-lg gradient">
             <button
-              style={{ borderRadius: "50%", width: 30, height: 30 }}
-              className=" bg-[#131319] p-[10px] m-3  float-right"
+              className=" bg-[#131319] rounded-full w-7 h-7 absolute right-4 top-4"
               onClick={() => {
                 navigate("/home");
                 document.body.style.overflow = "auto";
               }}
             >
-              <Cross />
+              <div className="mx-auto w-2.5 h-2.5">
+                <Cross />
+              </div>
             </button>
             <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col justify-center items-center">
               <h2 className="mt-10 text-center text-sm  font-bold leading-9 tracking-tight text-grayShade">
@@ -165,7 +159,7 @@ export default function OnboardingModal() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm text-left font-medium leading-6 text-[#C5C7CA]"
+                    className="block text-sm text-left font-medium leading-6 text-gray"
                   >
                     Email or Username
                   </label>
@@ -185,14 +179,14 @@ export default function OnboardingModal() {
                   <div className="flex items-center justify-between">
                     <label
                       htmlFor="password"
-                      className="block text-sm font-medium leading-6 text-[#C5C7CA]"
+                      className="block text-sm font-medium leading-6 text-gray"
                     >
                       Password
                     </label>
                     <div className="text-sm">
                       <a
                         href="#"
-                        className="font-semibold text-[#C5C7CA] hover:text-indigo-500"
+                        className="font-semibold text-gray hover:text-indigo-500"
                       >
                         Forgot password?
                       </a>
@@ -226,9 +220,9 @@ export default function OnboardingModal() {
               </form>
 
               <p className="mt-2 text-left text-sm text-lightGray">
-                Already have an account
+                Not registered yet?
                 <button
-                  className="ml-1 font-semibold leading-6 text-[#C5C7CA] hover:text-indigo-500"
+                  className="ml-1 font-semibold leading-6 text-gray hover:text-indigo-500"
                   onClick={() => setLoginView(!loginView)}
                 >
                   {" "}

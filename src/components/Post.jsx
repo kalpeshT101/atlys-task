@@ -25,7 +25,7 @@ export const Post = ({
                 alt="Rounded avatar"
               />
               <div className="ml-2">
-                <h3 className="text-[#C5C7CA] text-left text-base font-semibold">
+                <h3 className="text-gray text-left text-base font-semibold">
                   {name}
                 </h3>
                 <h3 className="text-lightGray text-left text-sm">

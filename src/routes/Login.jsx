@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { Logo } from "../assets/svg/Logo";
+import { Eye } from "../assets/svg/Eye";
 
 export default function Login() {
   const location = useLocation();
@@ -58,15 +59,18 @@ export default function Login() {
                     </a>
                   </div>
                 </div>
-                <div className="mt-2">
+                <div className="mt-2 flex bg-blackBg items-center border border-blackBorder">
                   <input
                     id="password"
                     name="password"
                     type="password"
                     autoComplete="current-password"
                     placeholder="Enter your password"
-                    className="bg-blackBg text-white block w-full rounded-md border-0 placeholder-lightGray  p-2 shadow-sm ring-1 ring-inset ring-blackBorder placeholder:text-gray-400 focus:outline-0 sm:text-sm sm:leading-6"
+                    className="bg-blackBg  block w-full rounded-md border-0 placeholder-lightGray  p-2 shadow-sm  placeholder:text-gray-400 focus:outline-0 text-white  sm:text-sm sm:leading-6"
                   />
+                  <div className="mr-2">
+                    <Eye />
+                  </div>
                 </div>
               </div>
 
