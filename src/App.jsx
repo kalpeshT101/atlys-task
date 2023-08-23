@@ -1,20 +1,25 @@
-import React from 'react';
-
+import React from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Login from "./routes/Login";
+import OnboardingModal from "./routes/OnboardingModal";
+import UserFeed from "./routes/UserFeed";
 function App() {
-	return (
-		<div className='flex items-center justify-center w-screen h-screen bg-gray-900 '>
-			<div className='w-3/12 p-6 mx-auto space-y-10 text-center bg-gray-800 rounded'>
-				<h1 className='text-4xl text-white'>Vite + React + Tailwind</h1>
-				<p className='text-2xl text-blue-300'>It's working</p>
-				<a
-					href='https://github.com/moinulmoin/vite-react-tailwind-starter'
-					className='block text-3xl text-blue-300 underline'
-				>
-					⭐Star the repo if it helped you! :)
-				</a>
-			</div>
-		</div>
-	);
+  const location = useLocation();
+  const background = location.state && location.state.background;
+
+  return (
+    <div className="App">
+      <Routes location={background || location}>
+        <Route path="/" element={<Login />}></Route>
+        <Route path="/home" element={<UserFeed />} />
+      </Routes>
+      {background && (
+        <Routes>
+          <Route path="/home/modal" element={<OnboardingModal />} />
+        </Routes>
+      )}
+    </div>
+  );
 }
 
 export default App;
