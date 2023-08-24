@@ -14,7 +14,7 @@ export default function OnboardingModal() {
     if (loginView) {
       return (
         <div className="modalDiv fixed top-0 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full transition-all transform ease-out duration-500">
-          <div className="bg-blackBg w-1/3 rounded-lg gradient">
+          <div className="bg-blackBg w-4/5 md:w-1/3 rounded-lg gradient">
             <button
               className=" bg-[#131319] rounded-full w-7 h-7 absolute right-4 top-4"
               onClick={() => {
@@ -128,7 +128,7 @@ export default function OnboardingModal() {
     } else {
       return (
         <div className="modalDiv fixed top-0 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div className="bg-blackBg w-1/3 rounded-lg gradient">
+          <div className="bg-blackBg w-4/5 md:w-1/3 rounded-lg gradient">
             <button
               className=" bg-[#131319] rounded-full w-7 h-7 absolute right-4 top-4"
               onClick={() => {
