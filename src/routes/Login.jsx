@@ -11,7 +11,7 @@ export default function Login() {
         <div className="my-8">
           <Logo />
         </div>
-        <div className="bg-blackBg w-1/3 rounded-lg gradient">
+        <div className="bg-blackBg w-3/4  md:w-1/3 rounded-lg gradient">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col justify-center items-center">
             <h2 className="mt-10 text-center text-sm  font-bold leading-9 tracking-tight text-grayShade">
               WELCOME BACK

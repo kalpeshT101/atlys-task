@@ -5,7 +5,7 @@ export const CreatePost = () => {
   let location = useLocation();
   return (
     <>
-      <div className="bg-blackBg w-[60%] rounded border-2 border-blackBorder mb-5">
+      <div className="bg-blackBg w-4/5 md:w-[60%] rounded border-2 border-blackBorder mb-5">
         <Link to="onboarding" state={{ background: location }}>
           <h1
             htmlFor="message"
